@@ -45,7 +45,7 @@ If you have [TextMate](http://macromates.com/) or [RubyMine](http://www.jetbrain
 	  As an Apple iOS user
 	  I want to enter my name and see a friendly hello
 
-The above text describes the new feature's value or benefit, the user's role and the feature details--all in a human-readable form. This is the Connextra format for expressing user stories. Each line describes the _why_, the _who_ and the _what_ of the feature in question.
+The above text describes the new feature's value or benefit, the user's role and the feature details—all in a human-readable form. This is the Connextra format for expressing user stories. Each line describes the _why_, the _who_ and the _what_ of the feature in question.
 
 Not obvious at first, but the feature is executable. That is, Cucumber inputs the feature with a view to testing it and driving the development process itself by focusing on behaviour required to meet the feature, as opposed to writing software that we _think_ or _imagine_ that might meet the requirements.
 
