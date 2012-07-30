@@ -90,7 +90,11 @@ Copy the test pre- and post-actions from the OCCukes scheme to your project's te
 
 ![TestPreActions](UICukes101/raw/master/Images/TestPreActions.png)
 
-Note, you provide build settings from your test target. Similarly for your test post-actions, as follows.
+Note, you provide build settings from your test target.
+
+Also note, the above `1.9.3` request for Ruby 1.9.3 using RVM. This assumes of course that you have Ruby 1.9.3 installed along with the Cucumber gem within that Ruby. If not, you will need to install Ruby 1.9.3 using `rvm install 1.9.3` and then install Cucumber using `gem install cucumber`. If some of these assumptions fail, you will need to adjust the pre-action accordingly. You may need to adjust the Ruby version or use a Ruby installed by other means, rather than by [Ruby Version Manager](https://rvm.io/).
+
+Similarly for your test post-actions, as follows.
 
 ![TestPostActions](UICukes101/raw/master/Images/TestPostActions.png)
 
