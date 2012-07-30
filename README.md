@@ -110,3 +110,7 @@ With that in place, you can launch Cucumber using Cmd+U. Cucumber launches in th
 
 Cucumber wired up! It does not do anything, yet. Cucumber merely parses the feature and displays it. Our project is ready for some scenarios.
 
+### All Load
+
+One final step: navigate to your test target's Build Settings and look for Other Linker Flags. Add `-all_load` to the flags, i.e. `OTHER_LDFLAGS = "-all_load"`. Objective-C does not automatically load Objective-C categories when linking against static libraries. This flag fixes that issue in advance.
+
