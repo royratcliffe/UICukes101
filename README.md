@@ -82,3 +82,15 @@ Copy `UICukes/OCCukes/features/support/env.rb` to the `features/support` folder.
 
 Similarly, copy `UICukes/OCCukes/features/step_definitions/54321.wire` to the `features/step_definitions` folder; also available [online](https://github.com/OCCukes/OCCukes/blob/master/features/step_definitions/54321.wire). The name does not matter. The file configures Cucumber to look for the wire-protocol server at port 54321 on `localhost`. This configuration stands in place of step definitions; they exist on the _other_ side of the wire.
 
+At this point, Cucumber is ready to roll. But Xcode is not. Not yet.
+
+### Test Pre- and Post-Actions
+
+Copy the test pre- and post-actions from the OCCukes scheme to your project's test phase. Test pre-actions should look like this. See screenshot below.
+
+![TestPreActions](UICukes101/raw/master/Images/TestPreActions.png)
+
+Note, you provide build settings from your test target. Similarly for your test post-actions, as follows.
+
+![TestPostActions](UICukes101/raw/master/Images/TestPostActions.png)
+
