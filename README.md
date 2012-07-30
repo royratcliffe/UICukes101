@@ -136,3 +136,5 @@ Add then re-test. When you re-test by pressing Cmd+U, you see some additional in
 
 ![Snippets](UICukes101/raw/master/Images/Snippets.png)
 
+You might notice that each step has two alternative 'snippets' or stubs, one for Ruby and one for Objective-C. You can define steps in different languages. Cucumber does not care how you define the steps. Implementation language does not matter.
+
