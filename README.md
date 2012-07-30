@@ -28,4 +28,4 @@ The standard Cucumber folder structure lays out something like this.
 		* `support`: Cucumber looks for this folder
 			- `env.rb`: describes [things about the Cucumber execution environment](https://raw.github.com/OCCukes/OCCukes/master/features/support/env.rb)
 		* `step_definitions`: defines steps for Ruby projects
-			- `localhost.wire`: no Ruby steps here, redirect to Objective-C using the wire protocol
+			- `localhost.wire`: no Ruby steps here, redirect to Objective-C using the Cucumber wire protocol
