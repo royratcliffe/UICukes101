@@ -32,3 +32,16 @@ The standard Cucumber folder structure lays out something like this.
 
 This is how your Cucumber-based iOS app project folder will accommodate Cucumber features. It contains only a tiny amount of Ruby for integrating Cucumber and Xcode.
 
+Back to our application development.
+
+## First Feature
+
+If you have [TextMate](http://macromates.com/) or [RubyMine](http://www.jetbrains.com/ruby/), writing features becomes easier. They understand the [Gherkin](https://github.com/cucumber/gherkin)-formatted feature files and have shortcuts for stubbing out templates for features and scenarios. Create `personal_greeting.feature` in `features`. Make its contents equal to:
+
+	Feature: Personal greeting
+	  In order to see my personal greeting
+	  As an Apple iOS user
+	  I want to enter my name and see a friendly hello
+
+This text describes the new feature's value, the user's role and the feature details in a human-readable form.
+
