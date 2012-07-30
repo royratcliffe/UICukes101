@@ -61,5 +61,12 @@ You can launch the template-generated application straight away. It does nothing
 
 Boring. Very tempting to throw on some controls and wire up the view controller at this point. But no. Let Cucumber guide our steps! For simple applications like this one, behaviour-driven design and development seems overkill. But for more complex and realistic projects, it proves golden.
 
-## Install UICukes
+## Install `UICukes`
+
+Use Git to add `UICukes` to your project folder as a Git submodule. There are various useful Mac GUI tools for operating Git. Here are the Terminal commands. Run them from your project's root folder.
+
+	git submodule add git://github.com/OCCukes/UICukes.git
+	git submodule update --init --recursive
+
+The `git://` reference is the read-only link to the primary `UICukes` repo at GitHub. Most developers will use this one. The first command clones the repo but does __not__ automatically clone the submodule's addition sub-submodule dependencies. Hence the second command.
 
