@@ -108,3 +108,5 @@ With that in place, you can launch Cucumber using Cmd+U. Cucumber launches in th
 
 ![CucumberFeatures](UICukes101/raw/master/Images/CucumberFeatures.png)
 
+Cucumber wired up! It does not do anything, yet. Cucumber merely parses the feature and displays it. Our project is ready for some scenarios.
+
