@@ -186,3 +186,18 @@ And when you re-test, the new steps become pending. Output looks like this:
 
 ![Pending](UICukes101/raw/master/Images/Pending.png)
 
+Cucumber invites us to resolve the pending steps one by one.
+
+## Step: Given the User Launches the App
+
+This is a simple step. Xcode handles the automatic launching on our behalf. But what we can do is to express an expectation that the front-most application's name matches our app's name, `UICukes101`. The expectation for this using `UIAutomation` and `OCExpectations` reads:
+
+```objc
+	[OCCucumber given:@"^that the user launches the personal greeter app$" step:^(NSArray *arguments) {
+		[[[[UIAutomation localTarget] frontMostApp] name] should:be(@"UICukes101")];
+	} file:__FILE__ line:__LINE__];
+```
+
+And now when we re-test, the first step goes __green__:
+
+![UserLaunchesAppGoesGreen](UICukes101/raw/master/Images/UserLaunchesAppGoesGreen.png)
