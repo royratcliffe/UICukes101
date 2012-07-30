@@ -138,7 +138,7 @@ Add then re-test. When you re-test by pressing Cmd+U, you see some additional in
 
 You might notice that each step has two alternative 'snippets' or stubs, one for Ruby and one for Objective-C. You can define steps in different languages. Cucumber does not care how you define the steps. Implementation language does not matter.
 
-## Step Definitions
+## Pending Step Definitions
 
 Create a module for defining your greeter steps. Add a new source file, `PersonalGreetingSteps.m`, to your test target. Let it define a static constructor function. The code looks like this. See below. Two things to note: the `constructor` attribute and the `static` storage classifier. The `StepDefinitions()` function remains anonymous outside the scope of the module, and it runs automatically at run-time when the test bundle executes. This is where we will insert our step definitions.
 
@@ -151,4 +151,38 @@ static void StepDefinitions()
 	
 }
 ```
+
+Copy the snippets to your step definitions function. You can copy directly from Safari. Your new pending step definitions will appear as:
+
+```objc
+#import <UICukes/UICukes.h>
+
+__attribute__((constructor))
+static void StepDefinitions()
+{
+	[OCCucumber given:@"^that the user launches the personal greeter app$" step:^(NSArray *arguments) {
+		// express the regular expression above with the code you wish you had
+		[OCCucumber pending:@"TODO"];
+	} file:__FILE__ line:__LINE__];
+	
+	[OCCucumber when:@"^the user enters his name \"(.*?)\"$" step:^(NSArray *arguments) {
+		// express the regular expression above with the code you wish you had
+		[OCCucumber pending:@"TODO"];
+	} file:__FILE__ line:__LINE__];
+	
+	[OCCucumber when:@"^presses the \"(.*?)\" button$" step:^(NSArray *arguments) {
+		// express the regular expression above with the code you wish you had
+		[OCCucumber pending:@"TODO"];
+	} file:__FILE__ line:__LINE__];
+	
+	[OCCucumber then:@"^the greeter app says a friendly \"(.*?)\"$" step:^(NSArray *arguments) {
+		// express the regular expression above with the code you wish you had
+		[OCCucumber pending:@"TODO"];
+	} file:__FILE__ line:__LINE__];
+}
+```
+
+And when you re-test, the new steps become pending. Output looks like this:
+
+![Pending](UICukes101/raw/master/Images/Pending.png)
 

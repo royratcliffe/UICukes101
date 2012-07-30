@@ -11,5 +11,23 @@
 __attribute__((constructor))
 static void StepDefinitions()
 {
+	[OCCucumber given:@"^that the user launches the personal greeter app$" step:^(NSArray *arguments) {
+		// express the regular expression above with the code you wish you had
+		[OCCucumber pending:@"TODO"];
+	} file:__FILE__ line:__LINE__];
 	
+	[OCCucumber when:@"^the user enters his name \"(.*?)\"$" step:^(NSArray *arguments) {
+		// express the regular expression above with the code you wish you had
+		[OCCucumber pending:@"TODO"];
+	} file:__FILE__ line:__LINE__];
+	
+	[OCCucumber when:@"^presses the \"(.*?)\" button$" step:^(NSArray *arguments) {
+		// express the regular expression above with the code you wish you had
+		[OCCucumber pending:@"TODO"];
+	} file:__FILE__ line:__LINE__];
+	
+	[OCCucumber then:@"^the greeter app says a friendly \"(.*?)\"$" step:^(NSArray *arguments) {
+		// express the regular expression above with the code you wish you had
+		[OCCucumber pending:@"TODO"];
+	} file:__FILE__ line:__LINE__];
 }
