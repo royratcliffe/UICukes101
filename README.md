@@ -70,3 +70,5 @@ Use Git to add `UICukes` to your project folder as a Git submodule. There are va
 
 The `git://` reference is the read-only link to the primary `UICukes` repo at GitHub. Most developers will use this one. The first command clones the repo but does __not__ automatically clone the submodule's addition sub-submodule dependencies. Hence the second command.
 
+Add the `UICukes/UICukes.xcodeproj` to your project. Do not copy any items; they are already there. Do not add to any targets. You need to add to your test target only.
+

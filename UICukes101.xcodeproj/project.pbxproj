@@ -31,6 +31,20 @@
 			remoteGlobalIDString = 7876155C15C6D1FC00F4ACB8;
 			remoteInfo = UICukes101;
 		};
+		787615B915C6F66D00F4ACB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7876159D15C6F66C00F4ACB8 /* UICukes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 788B89A515BE9209004D003C;
+			remoteInfo = UICukes;
+		};
+		787615BB15C6F66D00F4ACB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7876159D15C6F66C00F4ACB8 /* UICukes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 788B89B615BE920A004D003C;
+			remoteInfo = UICukesTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +68,7 @@
 		7876158C15C6D1FD00F4ACB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7876158E15C6D1FD00F4ACB8 /* UICukes101Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICukes101Tests.h; sourceTree = "<group>"; };
 		7876158F15C6D1FD00F4ACB8 /* UICukes101Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICukes101Tests.m; sourceTree = "<group>"; };
+		7876159D15C6F66C00F4ACB8 /* UICukes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UICukes.xcodeproj; path = UICukes/UICukes.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +98,7 @@
 		7876155215C6D1FC00F4ACB8 = {
 			isa = PBXGroup;
 			children = (
+				7876159D15C6F66C00F4ACB8 /* UICukes.xcodeproj */,
 				7876156715C6D1FD00F4ACB8 /* UICukes101 */,
 				7876158815C6D1FD00F4ACB8 /* UICukes101Tests */,
 				7876156015C6D1FC00F4ACB8 /* Frameworks */,
@@ -154,6 +170,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7876159E15C6F66C00F4ACB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				787615BA15C6F66D00F4ACB8 /* libUICukes.a */,
+				787615BC15C6F66D00F4ACB8 /* UICukesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,6 +237,12 @@
 			mainGroup = 7876155215C6D1FC00F4ACB8;
 			productRefGroup = 7876155E15C6D1FC00F4ACB8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7876159E15C6F66C00F4ACB8 /* Products */;
+					ProjectRef = 7876159D15C6F66C00F4ACB8 /* UICukes.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7876155C15C6D1FC00F4ACB8 /* UICukes101 */,
@@ -219,6 +250,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		787615BA15C6F66D00F4ACB8 /* libUICukes.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUICukes.a;
+			remoteRef = 787615B915C6F66D00F4ACB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		787615BC15C6F66D00F4ACB8 /* UICukesTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UICukesTests.octest;
+			remoteRef = 787615BB15C6F66D00F4ACB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7876155B15C6D1FC00F4ACB8 /* Resources */ = {
@@ -448,6 +496,7 @@
 				7876159515C6D1FD00F4ACB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7876159615C6D1FD00F4ACB8 /* Build configuration list for PBXNativeTarget "UICukes101Tests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +505,7 @@
 				7876159815C6D1FD00F4ACB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
