@@ -23,6 +23,7 @@
 		7876159015C6D1FD00F4ACB8 /* UICukes101Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7876158F15C6D1FD00F4ACB8 /* UICukes101Tests.m */; };
 		787615C615C6F72300F4ACB8 /* libUICukes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 787615BA15C6F66D00F4ACB8 /* libUICukes.a */; };
 		787615C915C7045700F4ACB8 /* OCCukesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 787615C815C7045700F4ACB8 /* OCCukesTests.m */; };
+		787615CB15C717F700F4ACB8 /* PersonalGreetingSteps.m in Sources */ = {isa = PBXBuildFile; fileRef = 787615CA15C717F700F4ACB8 /* PersonalGreetingSteps.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		7876159D15C6F66C00F4ACB8 /* UICukes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UICukes.xcodeproj; path = UICukes/UICukes.xcodeproj; sourceTree = "<group>"; };
 		787615C715C7045700F4ACB8 /* OCCukesTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCukesTests.h; sourceTree = "<group>"; };
 		787615C815C7045700F4ACB8 /* OCCukesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCukesTests.m; sourceTree = "<group>"; };
+		787615CA15C717F700F4ACB8 /* PersonalGreetingSteps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalGreetingSteps.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				7876158F15C6D1FD00F4ACB8 /* UICukes101Tests.m */,
 				787615C715C7045700F4ACB8 /* OCCukesTests.h */,
 				787615C815C7045700F4ACB8 /* OCCukesTests.m */,
+				787615CA15C717F700F4ACB8 /* PersonalGreetingSteps.m */,
 				7876158915C6D1FD00F4ACB8 /* Supporting Files */,
 			);
 			path = UICukes101Tests;
@@ -337,6 +340,7 @@
 			files = (
 				7876159015C6D1FD00F4ACB8 /* UICukes101Tests.m in Sources */,
 				787615C915C7045700F4ACB8 /* OCCukesTests.m in Sources */,
+				787615CB15C717F700F4ACB8 /* PersonalGreetingSteps.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
