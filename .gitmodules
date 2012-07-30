@@ -1,0 +1,3 @@
+[submodule "UICukes"]
+	path = UICukes
+	url = git://github.com/OCCukes/UICukes.git
