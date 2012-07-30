@@ -10,7 +10,7 @@ The application has a very simple requirement: say hello to the user! First, it 
 
 Start with nothing, except for your project's README. No Xcode project exists as yet. It's always good to start out with your project's README describing your project's aims and objectives. Describing helps to crystallise your ideas and focus on the goals.
 
-See the list of commits for this project to follow the steps precisely. The following description walks you through the process, blow by blow.
+See the [list of commits](UICukes101/commits/master) for this project to follow the steps precisely. The following description walks you through the process, blow by blow.
 
 Start by thinking about what your project's goals are. What features give the project its business value. Think up and type up your initial list of features. Write feature files, one for each feature under `features` within your project's root folder.
 
