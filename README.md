@@ -76,3 +76,7 @@ Add the `UICukes/UICukes.xcodeproj` to your project; Option+Cmd+A is the keyboar
 
 Open your test target's Build Phases. Add the `UICukes` target as a Target Dependency. Also add `libUICukes.a` as a library to link against. You can now press Cmd+U to compile, build, link and launch the test target. Tests will run but fail. The example test fails by design. Delete the boilerplate test code by removing the `-setUp`, `-tearDown` and `-testExample` methods. Keep the source files. You might find them useful for 'SenTesting' later.
 
+### Environment Support
+
+Copy `UICukes/OCCukes/features/support/env.rb` to the `features/support` folder. You can also find `env.rb` [online](https://github.com/OCCukes/OCCukes/blob/master/features/support/env.rb). This file contains just a little piece of Ruby for synchronising Cucumber with Xcode.
+
