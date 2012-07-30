@@ -114,3 +114,25 @@ Cucumber wired up! It does not do anything, yet. Cucumber merely parses the feat
 
 One final step: navigate to your test target's Build Settings and look for Other Linker Flags. Add `-all_load` to the flags, i.e. `OTHER_LDFLAGS = "-all_load"`. Objective-C does not automatically load Objective-C categories when linking against static libraries. This flag fixes that issue in advance.
 
+## Scenarios
+
+What are scenarios? Features comprise one or more 'scenarios' which exemplify how the software should behave. Scenarios themselves comprise one or more steps.
+
+For this simple app, the basic scenario follows the steps, given that the user launches the personal greeter app:
+
+1. when the user enters his name "Roy,"
+2. and presses the "Hello" button;
+3. then the greeter app says a friendly "Hello, Roy!"
+
+Add this scenario with steps to your feature as follows:
+
+	  Scenario: Says hello to Roy
+	    Given that the user launches the personal greeter app
+	    When the user enters his name "Roy"
+	    And presses the "Hello" button
+	    Then the greeter app says a friendly "Hello, Roy!"
+
+Add then re-test. When you re-test by pressing Cmd+U, you see some additional information. Cucumber provides some snippets for steps which now appear but Cucumber has no idea how they translate to success or failure. The behaviour-driven development process aims to make these yellow steps turn to green.
+
+![Snippets](UICukes101/raw/master/Images/Snippets.png)
+
