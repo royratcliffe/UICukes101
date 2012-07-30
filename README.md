@@ -59,7 +59,7 @@ You can launch the template-generated application straight away. It does nothing
 
 ![SingleViewAppTemplate](UICukes101/raw/master/Images/SingleViewAppTemplate.png)
 
-Boring. Very tempting to throw on some controls and wire up the view controller at this point. But no. Let Cucumber guide our steps!
+Boring. Very tempting to throw on some controls and wire up the view controller at this point. But no. Let Cucumber guide our steps! For simple applications like this one, behaviour-driven design and development seems overkill. But for more complex and realistic projects, it proves golden.
 
 ## Install UICukes
 
