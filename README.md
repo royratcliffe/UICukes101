@@ -72,5 +72,5 @@ The `git://` reference is the read-only link to the primary `UICukes` repo at Gi
 
 Add the `UICukes/UICukes.xcodeproj` to your project. Do not copy any items; they are already there. Do not add to any targets. You need to add to your test target only.
 
-Open your test target's Build Phases. Add the `UICukes` target as a Target Dependency. Also add `libUICukes.a` as a library to link against. You can now press Cmd+U to compile, build, link and launch the test target. Tests will run but fail. The example test fails by design. Delete the boilerplate test code by removing the `-setUp`, `-tearDown` and `-testExample` methods. Keep the source files. You might find them useful for SenTesting later.
+Open your test target's Build Phases. Add the `UICukes` target as a Target Dependency. Also add `libUICukes.a` as a library to link against. You can now press Cmd+U to compile, build, link and launch the test target. Tests will run but fail. The example test fails by design. Delete the boilerplate test code by removing the `-setUp`, `-tearDown` and `-testExample` methods. Keep the source files. You might find them useful for 'SenTesting' later.
 
