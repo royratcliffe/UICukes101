@@ -29,3 +29,6 @@ The standard Cucumber folder structure lays out something like this.
 			- `env.rb`: describes [things about the Cucumber execution environment](https://raw.github.com/OCCukes/OCCukes/master/features/support/env.rb)
 		* `step_definitions`: defines steps for Ruby projects
 			- `localhost.wire`: no Ruby steps here, redirect to Objective-C using the Cucumber wire protocol
+
+This is how your Cucumber-based iOS app project folder will accommodate Cucumber features. It contains only a tiny amount of Ruby for integrating Cucumber and Xcode.
+
