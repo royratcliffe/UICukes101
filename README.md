@@ -45,5 +45,21 @@ If you have [TextMate](http://macromates.com/) or [RubyMine](http://www.jetbrain
 	  As an Apple iOS user
 	  I want to enter my name and see a friendly hello
 
-This text describes the new feature's value, the user's role and the feature details in a human-readable form.
+The above text describes the new feature's value or benefit, the user's role and the feature details--all in a human-readable form. This is the Connextra format for expressing user stories. Each line describes the _why_, the _who_ and the _what_ of the feature in question.
+
+Not obvious at first, but the feature is executable. That is, Cucumber inputs the feature with a view to testing it and driving the development process itself by focusing on behaviour required to meet the feature, as opposed to writing software that we _think_ or _imagine_ that might meet the requirements.
+
+Next, we need to run the feature. That requires an iOS app and Cucumber integration. Start with an Xcode template.
+
+## Single View Application
+
+Create an Xcode project for iOS. Use the Single View Application template. Please reference Apple's guide, [Getting Started](https://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/chapters/RM_YourFirstApp_iOS/Articles/01_CreatingProject.html#//apple_ref/doc/uid/TP40011343-TP40012323-CH3-SW3). I called the app `UICukes101`, but you can call it anything. Use storyboards, ARC and unit tests. Make it Universal, for iPhone _and_ iPad.
+
+You can launch the template-generated application straight away. It does nothing very interesting, although it does much in terms of launching and running software on your iOS device. From the user's point of view though, it displays a white screen.
+
+![SingleViewAppTemplate](Images/SingleViewAppTemplate.png)
+
+Boring. Very tempting to throw on some controls and wire up the view controller at this point. But no. Let Cucumber guide our steps!
+
+## Install UICukes
 
