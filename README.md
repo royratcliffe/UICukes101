@@ -94,3 +94,13 @@ Note, you provide build settings from your test target. Similarly for your test 
 
 ![TestPostActions](UICukes101/raw/master/Images/TestPostActions.png)
 
+So far so good. One more piece to the connection puzzle. Your tests need to launch the wire protocol server.
+
+### Cucumber Runtime
+
+Copy `OCCukesTests.h` and `OCCukesTests.m` from `UICukes/OCCukes/OCCukesTests` to `UICukes101Tests` and add the source to your test target. These tests launch the Cucumber wire server, terminating automatically when all wire connections shut down.
+
+With that in place, you can launch Cucumber using Cmd+U. Cucumber launches in the background, interacts with your application and outputs:
+
+![CucumberFeatures](UICukes101/raw/master/Images/CucumberFeatures.png)
+
