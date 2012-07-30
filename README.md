@@ -143,12 +143,12 @@ You might notice that each step has two alternative 'snippets' or stubs, one for
 Create a module for defining your greeter steps. Add a new source file, `PersonalGreetingSteps.m`, to your test target. Let it define a static constructor function. The code looks like this. See below. Two things to note: the `constructor` attribute and the `static` storage classifier. The `StepDefinitions()` function remains anonymous outside the scope of the module, and it runs automatically at run-time when the test bundle executes. This is where we will insert our step definitions.
 
 ```objc
-	#import <UICukes/UICukes.h>
+#import <UICukes/UICukes.h>
+
+__attribute__((constructor))
+static void StepDefinitions()
+{
 	
-	__attribute__((constructor))
-	static void StepDefinitions()
-	{
-		
-	}
+}
 ```
 
