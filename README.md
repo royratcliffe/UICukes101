@@ -57,7 +57,7 @@ Create an Xcode project for iOS. Use the Single View Application template. Pleas
 
 You can launch the template-generated application straight away. It does nothing very interesting, although it does much in terms of launching and running software on your iOS device. From the user's point of view though, it displays a white screen.
 
-![SingleViewAppTemplate](Images/SingleViewAppTemplate.png)
+![SingleViewAppTemplate](UICukes101/raw/master/Images/SingleViewAppTemplate.png)
 
 Boring. Very tempting to throw on some controls and wire up the view controller at this point. But no. Let Cucumber guide our steps!
 
