@@ -12,8 +12,10 @@ __attribute__((constructor))
 static void StepDefinitions()
 {
 	[OCCucumber when:@"^the user enters his name \"(.*?)\"$" step:^(NSArray *arguments) {
-		// express the regular expression above with the code you wish you had
-		[OCCucumber pending:@"TODO"];
+		UIATarget *localTarget = [UIAutomation localTarget];
+		id textFields = [localTarget valueForKeyPath:@"frontMostApp.mainWindow.textFields"];
+		id textField = [textFields firstWithName:@"Name"];
+		[textField shouldNot:be_an(@"UIAElementNil")];
 	} file:__FILE__ line:__LINE__];
 	
 	[OCCucumber when:@"^presses the \"(.*?)\" button$" step:^(NSArray *arguments) {

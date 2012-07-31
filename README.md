@@ -237,3 +237,26 @@ At the moment, our app-name step exists within the scenario and we have to dupli
 	    And presses the "Hello" button
 	    Then the greeter app says a friendly "Hello, Roy!"
 
+## Step: User Enters Name
+
+Three more steps to go. Time for a red-green-refactor development cycle. We start by making the next pending step go __red__, fail. For this step to succeed, there should be a text field where the user enters their name.
+
+We can use Apple's UI automation framework to test our expectation. It works like this: you pick up the "local target," the starting point for navigating the UI hierarchy. Then you walk to the front-most app, then its main window, then ask for all the text fields. There _should_ be one labelled "Name." You normally do this using JavaScript in Instruments of course, but not with UICukes; you can walk the iOS user interface and visit its various interesting elements using Objective-C. The expectation looks like this:
+
+```objc
+	[OCCucumber when:@"^the user enters his name \"(.*?)\"$" step:^(NSArray *arguments) {
+		UIATarget *localTarget = [UIAutomation localTarget];
+		id textFields = [localTarget valueForKeyPath:@"frontMostApp.mainWindow.textFields"];
+		id textField = [textFields firstWithName:@"Name"];
+		[textField shouldNot:be_a(@"UIAElementNil")];
+	} file:__FILE__ line:__LINE__];
+```
+
+There are some important things to note about this step definition. First, notice that it uses Key-Value Coding to walk the elements. You can use Objective-C messages as well, of course. But sometimes, KVC can make things easier to read and has some special operators which can help parse out the relevant facts. Also note the `id` types. We are not really interested in the precise types. At this test-level of coding, type checking adds little. If any object fails to receive and handle the messages sent to it, the run-time will throw an exception and our step will fail explaining why to Cucumber. That is as good a test as any. Finally, note the `be_an` expectation. The expectation is that the request for the first text field named "Name" _should not be_ a kind of nil element. UIAutomation uses a special class to represent nil answers: `UIAElementNil`.
+
+On re-test, Cucumber outputs:
+
+![UserEntersNameRed](UICukes101/raw/master/Images/UserEntersNameRed.png)
+
+Red means failure. Time to turn red to green.
+
