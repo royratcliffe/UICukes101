@@ -212,5 +212,7 @@ to
 
 	    Given the front-most app has the name "UICukes101"
 
-Change the string in quotes to whatever you named your application.
+Change the string in quotes to whatever you named your application. Re-test and see the _new_ Given step, still green:
+
+![FrontMostAppHasName](UICukes101/raw/master/Images/FrontMostAppHasName.png)
 
