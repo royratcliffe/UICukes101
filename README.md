@@ -201,3 +201,14 @@ This is a simple step. Xcode handles the automatic launching on our behalf. But 
 And now when we re-test, the first step goes __green__:
 
 ![UserLaunchesAppGoesGreen](UICukes101/raw/master/Images/UserLaunchesAppGoesGreen.png)
+
+Progress! We can however eliminate this step definition altogether. UICukes provides a pre-defined step called "the front-most app has the name" where you supply the name of the application is double quotes, as an argument. Delete the step definition and rename the step from
+
+	    Given that the user launches the personal greeter app
+
+to
+
+	    Given the front-most app has the name "UICukes101"
+
+Change the string in quotes to whatever you named your application.
+

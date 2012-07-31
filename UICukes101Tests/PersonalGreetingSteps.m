@@ -11,10 +11,6 @@
 __attribute__((constructor))
 static void StepDefinitions()
 {
-	[OCCucumber given:@"^that the user launches the personal greeter app$" step:^(NSArray *arguments) {
-		[[[[UIAutomation localTarget] frontMostApp] name] should:be(@"UICukes101")];
-	} file:__FILE__ line:__LINE__];
-	
 	[OCCucumber when:@"^the user enters his name \"(.*?)\"$" step:^(NSArray *arguments) {
 		// express the regular expression above with the code you wish you had
 		[OCCucumber pending:@"TODO"];
