@@ -198,6 +198,8 @@ This is a simple step. Xcode handles the automatic launching on our behalf. But 
 	} file:__FILE__ line:__LINE__];
 ```
 
+This gives you an idea of how to access your application's user interface using [Apple's UIAutomation framework](http://developer.apple.com/library/ios/#documentation/DeveloperTools/Reference/UIAutomationRef/_index.html) ([reference PDF](http://developer.apple.com/library/ios/documentation/DeveloperTools/Reference/UIAutomationRef/UIAutomationRef.pdf)) using Objective-C. The semantics mimic the Instrument's JavaScript interface closely. Best way to learn it might be to play with the UIAutomation instrument using JavaScript. Record something and see what JavaScript code it produces. From there, you can work out relatively easily what Objective-C code gives you the same results.
+
 And now when we re-test, the first step goes __green__:
 
 ![UserLaunchesAppGoesGreen](UICukes101/raw/master/Images/UserLaunchesAppGoesGreen.png)
