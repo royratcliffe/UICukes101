@@ -200,6 +200,10 @@ This is a simple step. Xcode handles the automatic launching on our behalf. But 
 
 This gives you an idea of how to access your application's user interface using [Apple's UIAutomation framework](http://developer.apple.com/library/ios/#documentation/DeveloperTools/Reference/UIAutomationRef/_index.html) ([reference PDF](http://developer.apple.com/library/ios/documentation/DeveloperTools/Reference/UIAutomationRef/UIAutomationRef.pdf)) using Objective-C. The semantics mimic the Instrument's JavaScript interface closely. Best way to learn it might be to play with the UIAutomation instrument using JavaScript. Record something and see what JavaScript code it produces. From there, you can work out relatively easily what Objective-C code gives you the same results.
 
+Switching on the iOS Simulator's Accessibility Inspector is another useful way to access the underlying objects and their attributes. Navigate to Settings within the Simulator, to General, Accessibility. Slide the Accessibility Inspector to ON. From then on, clicking interface components tells you their label, value, traits and frame coordinates. Very useful. See below.
+
+![AccessibilityInspectorOn](UICukes101/raw/master/Images/AccessibilityInspectorOn.png)
+
 And now when we re-test, the first step goes __green__:
 
 ![UserLaunchesAppGoesGreen](UICukes101/raw/master/Images/UserLaunchesAppGoesGreen.png)
